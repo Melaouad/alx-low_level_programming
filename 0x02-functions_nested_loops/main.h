@@ -10,5 +10,8 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int	_putchar(char c);
+/**
+ * print_alphabet - writes alphabets from a to z
+ */
+void print_alphabet(void);
 
-#endif
