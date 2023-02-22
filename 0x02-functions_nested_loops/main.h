@@ -14,4 +14,4 @@ int	_putchar(char c);
  * print_alphabet - writes alphabets from a to z
  */
 void print_alphabet(void);
-
+#endif
