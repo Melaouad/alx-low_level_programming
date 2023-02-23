@@ -1,19 +1,20 @@
 #include "main.h"
 /**
- * print_line - printing lines using _
- * @n: number underscores
- * Return: none
+ * more_numbers - prints 10 times numbers from 0 to 14
+ * Return: no return
  */
-void print_line(int n)
+void more_numbers(void)
 {
-	int i;
 
-	i = 0;
-
-	while (i < n)
+int i, k;
+	for (i = 1; i <= 10; i++)
 	{
-		_putchar('_');
-		i++;
-	}
-	_putchar('\n');
+		for (k = 0; k <= 14; k++)
+		{
+			if (k >= 10)
+			_putchar('1');
+			_putchar(k % 10 + '0');
+		}
+			_putchar('\n');
+		}
 }
