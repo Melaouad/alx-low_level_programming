@@ -13,8 +13,12 @@ void	rev_string(char *s)
 	int d;
 	char tmp;
 
-	len = _strlen(s);
+	len = 0;
 	i = 0;
+
+	while (s[len] != '\0')
+		len++;
+
 	d = len / 2;
 
 	while (d--)
