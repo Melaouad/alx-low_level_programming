@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* print_chessboard - prints the chessboard
-* @a: The chessboard to be printed.
-* Return: nothing
-*/
+ * print_chessboard - prints the chessboard
+ * @a: The chessboard to be printed.
+ * Return: nothing
+ */
 
 void print_chessboard(char (*a)[8])
 {
@@ -14,11 +14,10 @@ void print_chessboard(char (*a)[8])
 	i = 0;
 	b = 0;
 
-	while (a[i][7])
+	while (i < 8)
 	{
 		while (b < 8)
-		{
-			_putchar(a[i][b]);
+		{	_putchar(a[i][b]);
 			b++;
 		}
 		_putchar('\n');
