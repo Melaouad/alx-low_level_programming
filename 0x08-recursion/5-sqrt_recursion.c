@@ -8,7 +8,7 @@
  */
 int _chekcer(int a, int b)
 {
-	if ((a * a) > a)
+	if ((a * a) > b)
 		return (-1);
 	if (a * a == b)
 		return (a);
