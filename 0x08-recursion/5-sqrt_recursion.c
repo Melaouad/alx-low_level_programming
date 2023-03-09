@@ -8,13 +8,11 @@
  */
 int _chekcer(int a, int b)
 {
-	if (a < 0)
+	if ((a * a) > a)
 		return (-1);
-	if ((b * b) > a)
-		return (-1);
-	if (b * b == a)
-		return (b);
-	return (_chekcer(a, b + 1));
+	if (a * a == b)
+		return (a);
+	return (_chekcer(a + 1, b));
 }
 /**
  * _sqrt_recursion - returns the natural square root of a number
