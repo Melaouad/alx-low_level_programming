@@ -6,4 +6,6 @@
  *Return: The integer value of @s.
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
+{
+}
