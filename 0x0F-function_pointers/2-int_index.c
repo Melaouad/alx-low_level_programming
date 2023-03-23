@@ -7,22 +7,19 @@
  * @cmp: function pointer
  * Return: index of integer
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int index;
 
-	i = 0;
-
-	if (size <= 0)
-		return (-1);
 	if (array == NULL || cmp == NULL)
 		return (-1);
 
-	while (i < size)
+	for (index = 0; index < size; index++)
 	{
-		if (cmp(array[i]) == 1)
-			return (i);
-		i++;
+		if (cmp(array[index]) != 0)
+			return (index);
 	}
+
 	return (-1);
 }
